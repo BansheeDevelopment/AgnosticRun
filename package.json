@@ -1,8 +1,9 @@
 {
   "name": "agnosticrun",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AgnosticRun is a lightweight vanilla JavaScript utility to ensure DOM elements exist before running functions.",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"No test specified\" && exit 1"
   },
