@@ -34,6 +34,36 @@ safeUpdate('element-id', 'Hello, World!');
 
 In this example, AgnosticRun ensures that the element with ID `element-id` exists before attempting to update its text content. If the element does not exist, the function will not execute.
 
+## Disable Warns and/or Logs
+
+AgnosticRun allows you to control the appearance of `console.log` and `console.warn` messages through optional flags. You can enable or disable these messages as needed using the following options:
+
+- `debugLog`: Controls the appearance of informational messages (`console.log`). It can be set to `true` or `false`.
+- `debugWarn`: Controls the appearance of warning messages (`console.warn`). It can be set to `true` or `false`.
+
+By default, both flags are disabled.
+
+### Example usage:
+
+Show only warns on console:
+```javascript
+window.agnosticRun = agnosticRun({ debugLog: false, debugWarn: true });
+```
+
+Show only debug messages on console:
+```javascript
+window.agnosticRun = agnosticRun({ debugLog: true, debugWarn: false });
+```
+
+Doesn't show any message:
+```javascript
+window.agnosticRun = agnosticRun;
+```
+-or-
+```javascript
+window.agnosticRun = agnosticRun({ debugLog: false, debugWarn: false });
+```
+
 ## License
 
 AgnosticRun is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
