@@ -1,1 +1,1 @@
-export function agnosticRun(fn: Function): (elementId: string, ...args: any[]) => any;
+export function agnosticRun(fn: (element: HTMLElement, ...args: any[]) => any): (elementId: string, ...args: any[]) => void;
