@@ -1,0 +1,35 @@
+{
+  "name": "agnosticrun",
+  "version": "0.1.0",
+  "description": "AgnosticRun is a lightweight vanilla JavaScript utility to ensure DOM elements exist before running functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BansheeDevelopment/AgnosticRun.git"
+  },
+  "keywords": [
+    "vanillajs",
+    "dom-check",
+    "dom-manipulation",
+    "element-exists",
+    "js-utility",
+    "agnostic-run",
+    "safe-dom",
+    "js-helper",
+    "lazy-dom-check",
+    "javascript",
+    "frontend",
+    "web-development",
+    "dom-events",
+    "cross-browser"
+  ],
+  "author": "Banshee Development",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BansheeDevelopment/AgnosticRun/issues"
+  },
+  "homepage": "https://github.com/BansheeDevelopment/AgnosticRun#readme"
+}
