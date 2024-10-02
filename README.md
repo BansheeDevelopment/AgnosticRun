@@ -47,12 +47,12 @@ By default, both flags are disabled.
 
 Show only wanrs on console
 ```javascript
-window.agnosticRun = agnosticRun(fn, { debugLog: false, debugWarn: true });
+window.agnosticRun = agnosticRun({ debugLog: false, debugWarn: true });
 ```
 
 Show only debug messages on console
 ```javascript
-window.agnosticRun = agnosticRun(fn, { debugLog: true, debugWarn: false });
+window.agnosticRun = agnosticRun({ debugLog: true, debugWarn: false });
 ```
 
 Doesn't show any message

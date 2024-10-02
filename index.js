@@ -1,16 +1,20 @@
-/*! 
- * AgnosticRun 0.2.1 by Banshee Development
+/**
+ * AgnosticRun 0.2.5 by Banshee Development
  * MIT License
  * https://www.banshee.pro
  *
- * A utility function that safely runs a given function 
+ * A utility function that safely runs a given function
  * on a DOM element if the element exists. It logs or warns
  * based on customizable debug flags.
  *
  * Copyright (c) 2024 Banshee
  */
 
-export function agnosticRun(fn, { debugLog = false, debugWarn = false } = {}) {
+export function agnosticRun({ debugLog = false, debugWarn = false } = {}) {
+  function fn(element, ...args) {
+    return element;
+  }
+
   return function (elementId, ...args) {
     if (typeof elementId !== "string" || !elementId.trim()) {
       if (debugWarn) {
