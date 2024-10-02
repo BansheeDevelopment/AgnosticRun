@@ -1,1 +1,1 @@
-export function agnosticRun(options?: { debugLog?: boolean; debugWarn?: boolean }): (elementId: string, ...args: any[]) => HTMLElement | void;
+export function agnosticRun(fn: (element: HTMLElement, ...args: any[]) => any): (elementId: string, ...args: any[]) => void;
