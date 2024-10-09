@@ -1,13 +1,15 @@
 /**
- * AgnosticRun 0.2.11 by Banshee Development
- * MIT License
- * https://www.banshee.pro
+ * AgnosticRun 0.2.12
  *
  * A utility function that safely runs a given function
  * on a DOM element if the element exists. It logs or warns
  * based on customizable debug flags set globally.
  *
- * Copyright (c) 2024 Banshee
+ * Developed by Claudio González (claudio@banshee.pro)
+ * for Banshee Technologies - https://www.banshee.pro
+ *
+ * MIT License
+ * Copyright (c) 2024 Banshee Technologies. All rights reserved.
  */
 
 let globalDebugLog = false;
